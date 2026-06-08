@@ -1,0 +1,42 @@
+{
+  "name": "PlacesFinder — Discover Amazing Places",
+  "short_name": "PlacesFinder",
+  "description": "Find restaurants, hotels, cafes, hospitals and more around you with interactive maps.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F8F7F4",
+  "theme_color": "#00D4A8",
+  "lang": "en",
+  "scope": "/",
+  "categories": ["travel", "maps", "navigation", "lifestyle"],
+  "icons": [
+    { "src": "/icons/icon-72.png",       "sizes": "72x72",     "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-96.png",       "sizes": "96x96",     "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-128.png",      "sizes": "128x128",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-144.png",      "sizes": "144x144",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-152.png",      "sizes": "152x152",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-192.png",      "sizes": "192x192",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-384.png",      "sizes": "384x384",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png",      "sizes": "512x512",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable.png", "sizes": "192x192",   "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search Places",
+      "short_name": "Search",
+      "description": "Search for places near you",
+      "url": "/search",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Favorites",
+      "short_name": "Favorites",
+      "description": "View your saved places",
+      "url": "/favorites",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

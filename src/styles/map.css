@@ -1,0 +1,92 @@
+/* src/styles/map.css */
+.pf-map-wrapper {
+  position: relative;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.pf-map-wrapper .leaflet-container {
+  border-radius: var(--r-xl);
+}
+
+/* Popup */
+.leaflet-popup-content-wrapper {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--r-md) !important;
+  box-shadow: var(--shadow-lg) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 220px !important;
+}
+.leaflet-popup-tip { background: var(--bg-card) !important; }
+.leaflet-popup-close-button { color: var(--text-muted) !important; font-size: 18px !important; top: 8px !important; right: 8px !important; }
+
+.map-popup-body {
+  padding: 14px 16px;
+}
+.map-popup-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.map-popup-cat {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex; align-items: center; gap: 4px;
+}
+.map-popup-link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  padding: 7px;
+  background: var(--accent-soft);
+  color: var(--accent-dim);
+  border-radius: var(--r-sm);
+  text-decoration: none;
+  transition: background var(--t-fast);
+}
+.map-popup-link:hover { background: var(--accent); color: #0F0F0E; }
+
+/* Custom marker */
+.pf-marker {
+  width: 36px; height: 36px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex; align-items: center; justify-content: center;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  font-size: 14px;
+}
+.pf-marker-inner { transform: rotate(45deg); }
+
+/* Map controls */
+.pf-map-controls {
+  position: absolute;
+  top: 12px; right: 12px;
+  display: flex; flex-direction: column; gap: 6px;
+  z-index: 1000;
+}
+.pf-map-ctrl-btn {
+  width: 36px; height: 36px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 16px;
+  transition: all var(--t-fast);
+  box-shadow: var(--shadow-sm);
+}
+.pf-map-ctrl-btn:hover { border-color: var(--accent); color: var(--accent); }

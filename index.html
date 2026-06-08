@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- SEO -->
+    <title>PlacesFinder — Discover Amazing Places</title>
+    <meta name="description" content="Find restaurants, hotels, cafes, hospitals and more around you with interactive maps powered by OpenStreetMap." />
+    <meta name="keywords" content="places, map, restaurants, hotels, nearby, search, OpenStreetMap" />
+    <meta name="author" content="PlacesFinder" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00D4A8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="PlacesFinder" />
+    <meta name="application-name" content="PlacesFinder" />
+    <meta name="msapplication-TileColor" content="#00D4A8" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32"  href="/icons/icon-96.png" />
+    <link rel="icon" type="image/png" sizes="96x96"  href="/icons/icon-96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <!-- Apple touch icons -->
+    <link rel="apple-touch-icon"              href="/icons/icon-152.png" />
+    <link rel="apple-touch-icon" sizes="72x72"   href="/icons/icon-72.png" />
+    <link rel="apple-touch-icon" sizes="96x96"   href="/icons/icon-96.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="/icons/icon-128.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="PlacesFinder — Discover Amazing Places" />
+    <meta property="og:description" content="Find restaurants, hotels, cafes, hospitals and more." />
+    <meta property="og:image"       content="/icons/icon-512.png" />
+    <meta property="og:url"         content="https://your-domain.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary" />
+    <meta name="twitter:title"       content="PlacesFinder" />
+    <meta name="twitter:description" content="Discover amazing places around you." />
+    <meta name="twitter:image"       content="/icons/icon-512.png" />
+
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.warn('SW registration failed:', err));
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
