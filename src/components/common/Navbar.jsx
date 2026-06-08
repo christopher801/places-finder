@@ -30,7 +30,6 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="pf-logo" onClick={closeMenu}>
             <div className="pf-logo-icon">📍</div>
-            <span className="pf-logo-text">PlacesFinder</span>
           </Link>
 
           {/* Desktop Nav */}
